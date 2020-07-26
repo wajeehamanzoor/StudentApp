@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction() {
+	var x= document.getElementById("in").value;
+	var y=document.getElementById("inp").value;
+	var z= document.getElementById("service").value;
+
+	if (isNaN(x) || isNaN(y) || x.legth == 0 || y.length ==0)
+	{
+			text = "Please enter valid input";
+			document.getElementById("demo").innerHTML = text;
+			
+	}
+	else{
+		if(z=="outstanding")
+			document.getElementById("demo").innerHTML = '$'.sup()+x *0.30*y;
+		else if(z=="good")
+			document.getElementById("demo").innerHTML = '$'.sup()+x *0.20*y;
+		else if(z=="ok")
+			document.getElementById("demo").innerHTML = '$'.sup()+x *0.15*y;
+		else if(z=="bad")
+			document.getElementById("demo").innerHTML = '$'.sup()+x *0.10*y;
+		else 
+			document.getElementById("demo").innerHTML = '$'.sup()+x *0.05*y;
+	}	
+}
+
+</script>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="box">
+	<p id="h"> SHARE SPLIT </p>
+	<p id="cost"> How much was your cost? </p>
+	<label> $ </label>
+	<input id="in">
+	<p id="cost"> How was your service? </p>
+	<select name="service" id="service">
+	  <option disabled > -- Choose a Car -- </option>
+	  <option value= "outstanding">30% - Outstanding</option>
+	  <option value= "good">20% - Good</option>
+	  <option value="ok">15% - it was Ok</option>
+	  <option value="bad">10% - Bad </option>
+	  <option value="terrible">5% - Terrible</option>
+	</select>
+	<p id="cost"  > How many people are sharing the Profit? </p>
+	<input id= "inp"> people
+	<br><br>
+	<div>
+		<button class="btn" onClick= "myFunction()"> CALCULATE! </button>
+	</div>
+	<br><br>
+	<div>
+		<h4>SHARE</h4>
+		<p id="demo" ></p>
+	</div> 
+	</div>
+	
+
+</body>
+</html>

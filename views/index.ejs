@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student App</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+    
+  <h1>Student App</h1>
+  <div>
+        <button onclick="location.href='./StudentApp.html'">Add Student</button>
+        <br><br><br>
+        <button>Search Student</button>
+        <br><br><br>
+        <button>Update Student</button>
+        <br><br><br>
+        <button>Delete Student</button>
+        <br><br><br>
+
+
+    </table>
+  
+
+  </table>
+    <br><br><br>
+    <table id="main">
+      <tr id="heading">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+      </tr>
+      <% for(var i=0; i < students.length; i++) { %>
+      <tr>
+        <td><%= students[i].first_name %></td>
+        <td><%= students[i].last_name %></td>
+        <td><%= students[i].gender%></td>
+      </tr>
+      <% } %>
+
+    </table>
+    </table>
+  </div>
+
+
+
+</body>
+
+</html>
