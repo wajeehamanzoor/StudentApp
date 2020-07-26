@@ -42,7 +42,8 @@ router.post('/', async (req, res) => {
       if (gender === 'female' || gender === 'male' || gender === 'other')
         student = await studentObj.save();
       else
-        return res.status(500).send('Invalid Gender');
+        res.render('addStudent', { message: "Invalid Gender Try again" });
+
     }
   else
     return res.status(500).send('All Fields must be filled');
