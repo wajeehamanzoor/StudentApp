@@ -66,4 +66,6 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-
+a{
+	color: white;
+}
