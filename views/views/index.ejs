@@ -2,16 +2,16 @@
 <html>
 
 <head>
-  <title>StudentApp</title>
+  <title>Student App</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
 <body>
 
-  <h1>STUDENT MANAGMENT SYSTEM</h1>
+  <h1>Student App</h1>
   <div>
     <form>
-      <button id= "btn"><a href="/add"> Add Student</a> </button>
+      <button><a href="/add"> Add Student</a> </button>
       <br><br><br>
       <br><br><br>
       <table id="main">
@@ -19,8 +19,6 @@
           <th>First Name</th>
           <th>Last Name</th>
           <th>Gender</th>
-          <th>Update</th>
-          <th>Delete</th>
         </tr>
         <% for(var i=0; i < students.length; i++) { %>
         <tr>
@@ -28,10 +26,10 @@
           <td><%= students[i].last_name %></td>
           <td><%= students[i].gender%></td>
           <td>
-            <button><a href='/student/<%= students[i]._id %>'>Update Student</a></button>
+            <a href='/student/<%= students[i]._id %>'>Update Student</a>
           </td>
           <td>
-            <button><a href='/delete/<%= students[i]._id %>'>delete Student</a></button>
+            <a href='/delete/<%= students[i]._id %>'>delete Student</a>
           </td>
         </tr>
         <% } %>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+	<h1>STUDENT MANAGMENT SYSTEM</h1>
+
+	<div class="box">
+		<h4 id="h"> Edit Student </h4>
+        <form method="post" action="/update/<%= student._id %>">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="first_name" value="<%= student.first_name %>" placeholder="Enter Your First Name"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="last_name" value="<%= student.last_name %>" placeholder="Enter Your Last Name"><br>
+			<label for="gender">Gender</label><br>
+			<input type="text" id="gender" name="gender" value="<%= student.gender %>" placeholder="Enter your Gender"><br><br>
+			<button id="btn" type="submit"> Update Student</a></button>
+		</form>
+	</div>
+</body>
+
+</html>

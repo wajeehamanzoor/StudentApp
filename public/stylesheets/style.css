@@ -31,8 +31,7 @@ input{
 
 	
 }
-
-button{
+#btn{
 	background-color:maroon;
 	color:white;
 	padding:10px;
@@ -46,6 +45,19 @@ button{
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
+button{
+	background-color:maroon;
+	color:white;
+	padding:5px;
+	width:130px;
+	border-radius:5px;
+	border-style: outset;
+}
+#heading,th{
+	background-color: black;
+	color:white;
+    padding: 8px;
+}
 h1,h4{
 	text-align:center;
 }
@@ -53,19 +65,20 @@ h1,h4{
 #main {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+
 }
 
-td, th {
-  border: 3px solid black;
-  text-align: left;
+td{
+  /* border: 3px solid black; */
   padding: 8px;
+  background-color: lightgray;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
 
 a{
 	color: white;
+	text-decoration: none;
 }
