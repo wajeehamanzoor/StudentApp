@@ -71,10 +71,9 @@ h1,h4{
 
 }
 
-td{
-  /* border: 3px solid black; */
-  padding: 8px;
-  background-color: lightgray;
+tr{
+  border: 3px solid black;
+  background-color:white;
 }
 
 
